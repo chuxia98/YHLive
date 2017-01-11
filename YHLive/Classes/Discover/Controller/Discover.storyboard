@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gew-Ik-Xmi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover View Controller-->
+        <scene sceneID="Bu3-Ev-EHf">
+            <objects>
+                <viewController id="tXv-pM-7jv" customClass="DiscoverViewController" customModule="YHLive" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mQB-cj-vKZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="rUK-P7-fyC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Fp-uO-6GN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qyh-tY-tGN"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kyj-Jl-SDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1927.2" y="35.532233883058474"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="YjK-mR-3MW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gew-Ik-Xmi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="found-n" selectedImage="found-p" id="Q5d-t2-iM3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6qb-At-G8c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tXv-pM-7jv" kind="relationship" relationship="rootViewController" id="xUZ-Mg-Jva"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lg4-OG-3G8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="35.532233883058474"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="found-n" width="25" height="19"/>
+        <image name="found-p" width="25" height="19"/>
+    </resources>
+</document>
