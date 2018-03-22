@@ -1,12 +1,18 @@
 PODS:
+  - Alamofire (4.7.0)
   - CXPageView (0.1.5)
+  - Kingfisher (4.6.4)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7.0)
   - CXPageView
+  - Kingfisher (~> 4.6.4)
 
 SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   CXPageView: 86fc054f5c97dc86619b7b7dd331f1a1b1f7741c
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
 
-PODFILE CHECKSUM: 11a70dfa3b016728d4220131ca5e401cc743fe7c
+PODFILE CHECKSUM: 5d6738ef3a964145a1bac9d04f9abefb4fe6c491
 
 COCOAPODS: 1.3.1

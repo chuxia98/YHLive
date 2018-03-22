@@ -8,30 +8,77 @@
 
 import UIKit
 
+private let kEdgeMargin : CGFloat = 8
+private let kAnchorCellID = "kAnchorCellID"
+
 class AnchorViewController: UIViewController {
     var homeType : HomeType!
+
+    fileprivate lazy var homeVM : HomeViewModel = HomeViewModel()
+    fileprivate lazy var collectionView : UICollectionView = {
+        let layout = WaterfallLayout()
+        layout.sectionInset = UIEdgeInsets(top: kEdgeMargin, left: kEdgeMargin, bottom: kEdgeMargin, right: kEdgeMargin)
+        layout.minimumLineSpacing = kEdgeMargin
+        layout.minimumInteritemSpacing = kEdgeMargin
+        layout.dataSource = self
+
+        let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(UINib(nibName: "HomeViewCell", bundle: nil), forCellWithReuseIdentifier: kAnchorCellID)
+        collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        collectionView.backgroundColor = UIColor.white
+
+        return collectionView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.randomColor()
+        setupUI()
+        loadData(index: 0)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+extension AnchorViewController {
+    fileprivate func setupUI() {
+        view.addSubview(collectionView)
+    }
+}
+
+extension AnchorViewController {
+    fileprivate func loadData(index : Int) {
+        homeVM.loadHomeData(type: homeType, index : index, finishedCallback: {
+            self.collectionView.reloadData()
+        })
+    }
+}
+
+extension AnchorViewController : UICollectionViewDataSource, WaterfallLayoutDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return homeVM.anchorModels.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kAnchorCellID, for: indexPath) as! HomeViewCell
+
+        cell.anchorModel = homeVM.anchorModels[indexPath.item]
+        cell.backgroundColor = UIColor.red
+        if indexPath.item == homeVM.anchorModels.count - 1 {
+            loadData(index: homeVM.anchorModels.count)
+        }
+
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let roomVc = RoomViewController()
+        navigationController?.pushViewController(roomVc, animated: true)
+    }
+
+    func waterfallLayout(_ layout: WaterfallLayout, indexPath: IndexPath) -> CGFloat {
+        return indexPath.item % 2 == 0 ? kScreenW * 2 / 3 : kScreenW * 0.5
+    }
+}
+

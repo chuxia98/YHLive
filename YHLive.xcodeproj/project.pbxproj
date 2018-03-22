@@ -23,6 +23,16 @@
 		0412D32C1E251DAB00B1D498 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412D32B1E251DAB00B1D498 /* DiscoverViewController.swift */; };
 		04F8A4D31E2621EF00F05B4D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8A4D21E2621EF00F05B4D /* UIColor+Extension.swift */; };
 		AF74ABBD6EB953ADA4925972 /* Pods_YHLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C9E15854F725057BC80DAC /* Pods_YHLive.framework */; };
+		B929060920638320005379FA /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929060820638320005379FA /* WaterfallLayout.swift */; };
+		B929061120638507005379FA /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929060F20638507005379FA /* NetworkTools.swift */; };
+		B929061220638507005379FA /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929061020638507005379FA /* KingfisherExtension.swift */; };
+		B92906152063860D005379FA /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92906132063860D005379FA /* AnchorModel.swift */; };
+		B92906162063860D005379FA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92906142063860D005379FA /* HomeViewModel.swift */; };
+		B929061B2063863C005379FA /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92906192063863C005379FA /* HomeViewCell.swift */; };
+		B929061C2063863C005379FA /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B929061A2063863C005379FA /* HomeViewCell.xib */; };
+		B9290623206386E5005379FA /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9290621206386E5005379FA /* RoomViewController.swift */; };
+		B9290624206386E5005379FA /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9290622206386E5005379FA /* RoomViewController.xib */; };
+		B929062720638742005379FA /* const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929062620638742005379FA /* const.swift */; };
 		B98F0DEA2063670500B3FB74 /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = B98F0DE92063670500B3FB74 /* types.plist */; };
 		B98F0DEC2063681700B3FB74 /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98F0DEB2063681700B3FB74 /* HomeType.swift */; };
 		B98F0DEE206369ED00B3FB74 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98F0DED206369ED00B3FB74 /* BaseModel.swift */; };
@@ -50,6 +60,16 @@
 		133234DCFEB55504E389C103 /* Pods-YHLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHLive/Pods-YHLive.release.xcconfig"; sourceTree = "<group>"; };
 		50E2050F7913D7A4E9AD1A5F /* Pods-YHLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHLive/Pods-YHLive.debug.xcconfig"; sourceTree = "<group>"; };
 		88C9E15854F725057BC80DAC /* Pods_YHLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B929060820638320005379FA /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		B929060F20638507005379FA /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		B929061020638507005379FA /* KingfisherExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
+		B92906132063860D005379FA /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		B92906142063860D005379FA /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B92906192063863C005379FA /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		B929061A2063863C005379FA /* HomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+		B9290621206386E5005379FA /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		B9290622206386E5005379FA /* RoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
+		B929062620638742005379FA /* const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = const.swift; sourceTree = "<group>"; };
 		B98F0DE92063670500B3FB74 /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
 		B98F0DEB2063681700B3FB74 /* HomeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
 		B98F0DED206369ED00B3FB74 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
@@ -105,10 +125,12 @@
 				B98F0DE82063670500B3FB74 /* Resource */,
 				0412D2F91E25060B00B1D498 /* Base */,
 				0412D2FD1E25060B00B1D498 /* Discover */,
+				B929061D206386D0005379FA /* Live */,
 				0412D3011E25060B00B1D498 /* Home */,
 				0412D3051E25060B00B1D498 /* Main */,
 				0412D3091E25060B00B1D498 /* Profile */,
 				0412D30D1E25060B00B1D498 /* Rank */,
+				B929060E20638507005379FA /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -201,6 +223,8 @@
 		0412D3031E25060B00B1D498 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B92906132063860D005379FA /* AnchorModel.swift */,
+				B92906142063860D005379FA /* HomeViewModel.swift */,
 				B98F0DEB2063681700B3FB74 /* HomeType.swift */,
 			);
 			path = Model;
@@ -209,6 +233,9 @@
 		0412D3041E25060B00B1D498 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B929060820638320005379FA /* WaterfallLayout.swift */,
+				B92906192063863C005379FA /* HomeViewCell.swift */,
+				B929061A2063863C005379FA /* HomeViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,6 +243,7 @@
 		0412D3051E25060B00B1D498 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B92906252063872F005379FA /* Common */,
 				04F8A4D11E2621DC00F05B4D /* Extension */,
 				0412D3061E25060B00B1D498 /* Controller */,
 				0412D3071E25060B00B1D498 /* Model */,
@@ -330,6 +358,56 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B929060E20638507005379FA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B929060F20638507005379FA /* NetworkTools.swift */,
+				B929061020638507005379FA /* KingfisherExtension.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B929061D206386D0005379FA /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				B929061E206386D0005379FA /* Controller */,
+				B929061F206386D0005379FA /* Model */,
+				B9290620206386D0005379FA /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		B929061E206386D0005379FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9290621206386E5005379FA /* RoomViewController.swift */,
+				B9290622206386E5005379FA /* RoomViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B929061F206386D0005379FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9290620206386D0005379FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B92906252063872F005379FA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B929062620638742005379FA /* const.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		B98F0DE82063670500B3FB74 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,7 +492,9 @@
 				0412D3201E2507E700B1D498 /* Profile.storyboard in Resources */,
 				0412D3221E25080400B1D498 /* Rank.storyboard in Resources */,
 				B98F0DEA2063670500B3FB74 /* types.plist in Resources */,
+				B929061C2063863C005379FA /* HomeViewCell.xib in Resources */,
 				0412D2EA1E24EDA600B1D498 /* LaunchScreen.storyboard in Resources */,
+				B9290624206386E5005379FA /* RoomViewController.xib in Resources */,
 				0412D2E71E24EDA600B1D498 /* Assets.xcassets in Resources */,
 				0412D31E1E25077D00B1D498 /* Discover.storyboard in Resources */,
 				0412D2E51E24EDA600B1D498 /* Main.storyboard in Resources */,
@@ -465,11 +545,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YHLive/Pods-YHLive-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CXPageView/CXPageView.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CXPageView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,14 +568,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B98F0DF020636B0500B3FB74 /* AnchorViewController.swift in Sources */,
+				B92906152063860D005379FA /* AnchorModel.swift in Sources */,
 				0412D3261E250F2400B1D498 /* RankViewController.swift in Sources */,
+				B92906162063860D005379FA /* HomeViewModel.swift in Sources */,
+				B929061120638507005379FA /* NetworkTools.swift in Sources */,
 				0412D32A1E251D7F00B1D498 /* HomeViewController.swift in Sources */,
 				0412D31A1E25071600B1D498 /* MainViewController.swift in Sources */,
+				B929060920638320005379FA /* WaterfallLayout.swift in Sources */,
 				0412D2E01E24EDA600B1D498 /* AppDelegate.swift in Sources */,
 				B98F0DEE206369ED00B3FB74 /* BaseModel.swift in Sources */,
 				0412D32C1E251DAB00B1D498 /* DiscoverViewController.swift in Sources */,
+				B929061220638507005379FA /* KingfisherExtension.swift in Sources */,
 				0412D3281E250F6100B1D498 /* ProfileViewController.swift in Sources */,
 				B98F0DEC2063681700B3FB74 /* HomeType.swift in Sources */,
+				B929062720638742005379FA /* const.swift in Sources */,
+				B929061B2063863C005379FA /* HomeViewCell.swift in Sources */,
+				B9290623206386E5005379FA /* RoomViewController.swift in Sources */,
 				0412D3241E2509D500B1D498 /* CXNavigationController.swift in Sources */,
 				04F8A4D31E2621EF00F05B4D /* UIColor+Extension.swift in Sources */,
 			);
