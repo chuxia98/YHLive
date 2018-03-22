@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CXPageView
 
 class HomeViewController: UIViewController {
 
@@ -15,7 +16,7 @@ class HomeViewController: UIViewController {
 
         setupUI()
         
-        view.backgroundColor = UIColor.randomColor()
+        view.backgroundColor = UIColor.white
     }
 
 }
@@ -24,6 +25,35 @@ extension HomeViewController {
     
     fileprivate func setupUI() {
         setNavigationBar()
+        setPageView()
+    }
+
+    fileprivate func loadTypesData() -> [HomeType] {
+        let path = Bundle.main.path(forResource: "types.plist", ofType: nil)!
+        let dataArray = NSArray(contentsOfFile: path) as! [[String : Any]]
+        var tempArray = [HomeType]()
+        for dict in dataArray {
+            tempArray.append(HomeType(dict: dict))
+        }
+        return tempArray
+    }
+
+    private func setPageView() {
+        let homeTypes = loadTypesData()
+
+        let frame = CGRect(x: 0, y: 64, width: self.view.frame.width, height: self.view.frame.height)
+        let titles = homeTypes.map({ $0.title })
+        var childVcs = [AnchorViewController]()
+        for type in homeTypes {
+            let vc = AnchorViewController()
+            vc.homeType = type
+            childVcs.append(vc)
+        }
+        let style = CXPageStyle()
+        style.isScrollEnable = true
+        style.contentViewBackgroundColor = UIColor.white
+        let pageView = CXPageView(frame, titles, childVcs, self, style)
+        self.view .addSubview(pageView)
     }
     
     private func setNavigationBar() {

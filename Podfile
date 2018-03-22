@@ -7,4 +7,8 @@ target 'YHLive' do
 
   # Pods for YHLive
 
+  pod 'CXPageView'
+  pod 'Alamofire', '~> 4.7.0'
+  pod 'Kingfisher', '~> 4.6.4'
+  
 end

@@ -22,6 +22,11 @@
 		0412D32A1E251D7F00B1D498 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412D3291E251D7F00B1D498 /* HomeViewController.swift */; };
 		0412D32C1E251DAB00B1D498 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412D32B1E251DAB00B1D498 /* DiscoverViewController.swift */; };
 		04F8A4D31E2621EF00F05B4D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8A4D21E2621EF00F05B4D /* UIColor+Extension.swift */; };
+		AF74ABBD6EB953ADA4925972 /* Pods_YHLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C9E15854F725057BC80DAC /* Pods_YHLive.framework */; };
+		B98F0DEA2063670500B3FB74 /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = B98F0DE92063670500B3FB74 /* types.plist */; };
+		B98F0DEC2063681700B3FB74 /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98F0DEB2063681700B3FB74 /* HomeType.swift */; };
+		B98F0DEE206369ED00B3FB74 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98F0DED206369ED00B3FB74 /* BaseModel.swift */; };
+		B98F0DF020636B0500B3FB74 /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98F0DEF20636B0500B3FB74 /* AnchorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,13 @@
 		0412D3291E251D7F00B1D498 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0412D32B1E251DAB00B1D498 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		04F8A4D21E2621EF00F05B4D /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		133234DCFEB55504E389C103 /* Pods-YHLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHLive/Pods-YHLive.release.xcconfig"; sourceTree = "<group>"; };
+		50E2050F7913D7A4E9AD1A5F /* Pods-YHLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHLive/Pods-YHLive.debug.xcconfig"; sourceTree = "<group>"; };
+		88C9E15854F725057BC80DAC /* Pods_YHLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98F0DE92063670500B3FB74 /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		B98F0DEB2063681700B3FB74 /* HomeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
+		B98F0DED206369ED00B3FB74 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		B98F0DEF20636B0500B3FB74 /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF74ABBD6EB953ADA4925972 /* Pods_YHLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +73,8 @@
 			children = (
 				0412D2DE1E24EDA600B1D498 /* YHLive */,
 				0412D2DD1E24EDA600B1D498 /* Products */,
+				349C604A8D5355C9A8E8D806 /* Pods */,
+				D2942D5527951FEAD78744DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +102,7 @@
 		0412D2F81E25060B00B1D498 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B98F0DE82063670500B3FB74 /* Resource */,
 				0412D2F91E25060B00B1D498 /* Base */,
 				0412D2FD1E25060B00B1D498 /* Discover */,
 				0412D3011E25060B00B1D498 /* Home */,
@@ -117,6 +133,7 @@
 		0412D2FB1E25060B00B1D498 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B98F0DED206369ED00B3FB74 /* BaseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				0412D3291E251D7F00B1D498 /* HomeViewController.swift */,
+				B98F0DEF20636B0500B3FB74 /* AnchorViewController.swift */,
 				0412D31B1E25076200B1D498 /* Home.storyboard */,
 			);
 			path = Controller;
@@ -183,6 +201,7 @@
 		0412D3031E25060B00B1D498 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B98F0DEB2063681700B3FB74 /* HomeType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,6 +321,31 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		349C604A8D5355C9A8E8D806 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50E2050F7913D7A4E9AD1A5F /* Pods-YHLive.debug.xcconfig */,
+				133234DCFEB55504E389C103 /* Pods-YHLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B98F0DE82063670500B3FB74 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B98F0DE92063670500B3FB74 /* types.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D2942D5527951FEAD78744DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88C9E15854F725057BC80DAC /* Pods_YHLive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,9 +353,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0412D2EE1E24EDA600B1D498 /* Build configuration list for PBXNativeTarget "YHLive" */;
 			buildPhases = (
+				1B7A2FC6044FAFD0D344D13D /* [CP] Check Pods Manifest.lock */,
 				0412D2D81E24EDA600B1D498 /* Sources */,
 				0412D2D91E24EDA600B1D498 /* Frameworks */,
 				0412D2DA1E24EDA600B1D498 /* Resources */,
+				D7FCCF3CE051B3A688D98E2B /* [CP] Embed Pods Frameworks */,
+				00EAE5D91F78B31C8A36C287 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -366,6 +413,7 @@
 			files = (
 				0412D3201E2507E700B1D498 /* Profile.storyboard in Resources */,
 				0412D3221E25080400B1D498 /* Rank.storyboard in Resources */,
+				B98F0DEA2063670500B3FB74 /* types.plist in Resources */,
 				0412D2EA1E24EDA600B1D498 /* LaunchScreen.storyboard in Resources */,
 				0412D2E71E24EDA600B1D498 /* Assets.xcassets in Resources */,
 				0412D31E1E25077D00B1D498 /* Discover.storyboard in Resources */,
@@ -376,17 +424,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00EAE5D91F78B31C8A36C287 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHLive/Pods-YHLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B7A2FC6044FAFD0D344D13D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YHLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7FCCF3CE051B3A688D98E2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YHLive/Pods-YHLive-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CXPageView/CXPageView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CXPageView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHLive/Pods-YHLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0412D2D81E24EDA600B1D498 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98F0DF020636B0500B3FB74 /* AnchorViewController.swift in Sources */,
 				0412D3261E250F2400B1D498 /* RankViewController.swift in Sources */,
 				0412D32A1E251D7F00B1D498 /* HomeViewController.swift in Sources */,
 				0412D31A1E25071600B1D498 /* MainViewController.swift in Sources */,
 				0412D2E01E24EDA600B1D498 /* AppDelegate.swift in Sources */,
+				B98F0DEE206369ED00B3FB74 /* BaseModel.swift in Sources */,
 				0412D32C1E251DAB00B1D498 /* DiscoverViewController.swift in Sources */,
 				0412D3281E250F6100B1D498 /* ProfileViewController.swift in Sources */,
+				B98F0DEC2063681700B3FB74 /* HomeType.swift in Sources */,
 				0412D3241E2509D500B1D498 /* CXNavigationController.swift in Sources */,
 				04F8A4D31E2621EF00F05B4D /* UIColor+Extension.swift in Sources */,
 			);
@@ -519,6 +624,7 @@
 		};
 		0412D2EF1E24EDA600B1D498 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50E2050F7913D7A4E9AD1A5F /* Pods-YHLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -534,6 +640,7 @@
 		};
 		0412D2F01E24EDA600B1D498 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 133234DCFEB55504E389C103 /* Pods-YHLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

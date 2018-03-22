@@ -1,0 +1,6 @@
+framework module CXPageView {
+  umbrella header "CXPageView-umbrella.h"
+
+  export *
+  module * { export * }
+}
