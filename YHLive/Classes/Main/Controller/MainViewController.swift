@@ -17,6 +17,10 @@ class MainViewController: UITabBarController {
         addChildVc("Rank")
         addChildVc("Discover")
         addChildVc("Profile")
+
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent;
+        UIApplication.shared.isStatusBarHidden = false;
+        self.tabBar.tintColor = UIColor.orange
     }
 
     fileprivate func addChildVc(_ storyName : String) {

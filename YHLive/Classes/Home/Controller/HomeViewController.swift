@@ -31,7 +31,7 @@ extension HomeViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: logoImage, style: .plain, target: nil, action: nil)
 
         let collectImage = UIImage(named: "search_btn_follow")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: collectImage, style: .plain, target: self, action: #selector(followItemClick))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: collectImage, style: .plain, target: self, action: #selector(HomeViewController.followItemClick))
         
         let searchFrame = CGRect(x: 0, y: 0, width: 200, height: 32)
         let searchBar = UISearchBar(frame: searchFrame)
