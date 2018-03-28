@@ -7,29 +7,27 @@
 //
 
 import UIKit
+import LFLiveKit
 
 class ProfileViewController: UIViewController {
 
+    lazy var session: LFLiveSession = {
+        let audioConfiguration = LFLiveAudioConfiguration.default()
+        let videoConfiguration = LFLiveVideoConfiguration.defaultConfiguration(for: .low2, outputImageOrientation: UIInterfaceOrientation.portrait)
+        let session = LFLiveSession(audioConfiguration: audioConfiguration, videoConfiguration: videoConfiguration)
+        session?.preView = self.view
+        return session!
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func startOutput(_ sender: Any) {
+        let stream = LFLiveStreamInfo()
+        stream.url = "rtmp://50.110.27.24/live/demo";
+        session.startLive(stream)
+        session.running = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
